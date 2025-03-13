@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Providers>
-        {pathName !=="/login" &&  <Navbar />}
+        {/* {pathName !=="/login" &&  <Navbar />} */}
           {children}
         </Providers>
       </body>

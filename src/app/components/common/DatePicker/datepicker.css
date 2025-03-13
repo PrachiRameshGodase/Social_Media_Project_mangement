@@ -1,0 +1,72 @@
+.date-picker {
+  position: relative;
+  display: flex;
+  align-items: center;
+  /* width: 350px; */
+  border: 1px solid #afaeae;
+  border-radius: 8px;
+  /* padding: 10px; */
+  font-family: Arial, sans-serif;
+  /* background-color: white; */
+}
+@media only screen and (max-width: 640px) {
+  .date-picker {
+    /* width: 310px; */
+  }
+}
+
+.date-input {
+  width: 100%;
+  padding: 7px;
+  border: none;
+  outline: none;
+  background: transparent;
+  /* font-size: 16px; */
+  color: #333;
+  cursor: pointer;
+}
+
+.date-input::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  /* background: #ffffff !important; */
+  z-index: 1;
+  /* border: 1px solid red; */
+  margin-left: -10px;
+  border-radius: 8px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.date-label {
+  background: #fff !important;
+  padding: 2px 10px;
+
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  /* font-size: 14px; */
+  /* color: #45464b; */
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #888888a4;
+  /* z-index: 1; */
+  cursor: pointer;
+}
+
+.icon svg {
+  color: #606060;
+}
+
+input:hover {
+}
